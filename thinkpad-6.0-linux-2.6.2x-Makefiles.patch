@@ -1,0 +1,19 @@
+diff --git a/thinkpad/6.0-1mdv2008.1/build/2.6/drivers/Makefile b/thinkpad/6.0-1mdv2008.1/build/2.6/drivers/Makefile
+index 019d10e..ecf5f60 100644
+--- thinkpad/6.0-1mdv2008.1/build/2.6/drivers/Makefile
++++ thinkpad-6.0/2.6/drivers/Makefile
+@@ -14,14 +14,10 @@ obj-m		:= thinkpad.o smapi.o superio.o rtcmosram.o
+ smapi-objs	:= smapi_core.o smapi_call.o
+ clean-files	:= $(smapi-objs) $(obj-m)
+ 
+-ifeq ($(KERNELRELEASE),)
+-
+ PWD	:= $(shell pwd)
+ 
+ default:
+ 	$(MAKE) -C $(KSRC) SUBDIRS=$(PWD) modules
+-
+-endif
+ 
+ clean:
+ 	rm -f *.o *.ko *.mod.? .*.o.cmd .*.ko.cmd
