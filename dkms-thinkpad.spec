@@ -83,3 +83,17 @@ rm -rf %buildroot
 /usr/src/%{modname}-%{version}-%{release}
 
 
+
+
+%changelog
+* Fri Mar 06 2009 Antoine Ginies <aginies@mandriva.com> 6.0-2mdv2009.1
++ Revision: 350651
+- rebuild
+
+* Fri Dec 21 2007 Olivier Blin <oblin@mandriva.com> 6.0-1mdv2009.0
++ Revision: 136367
+- restore BuildRoot
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - kill re-definition of %%buildroot on Pixel's request
+
