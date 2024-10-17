@@ -11,7 +11,7 @@ Summary:	DKMS-ready module adding kernel support for older Thinkpad laptops
 License:	GPL
 Source0:	%{modname}_%{version}.tar.gz
 Patch0:		thinkpad-6.0-linux-2.6.2x-Makefiles.patch
-Url:		http://heanet.dl.sourceforge.net/sourceforge/tpctl/
+Url:		https://heanet.dl.sourceforge.net/sourceforge/tpctl/
 Group:		Development/Kernel
 Requires(pre):	dkms
 Requires(post): dkms
